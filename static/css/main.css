@@ -1,0 +1,168 @@
+.page, .layer {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow-x: hidden;
+  top: 0;
+  left: 0; }
+  .page .inner, .layer .inner {
+    width: 100%;
+    height: 100%;
+    position: relative; }
+
+#loading {
+  background-color: #fac369; }
+  #loading .loadingcar {
+    width: 3.95rem;
+    height: 4.225rem;
+    position: absolute;
+    bottom: 45%;
+    right: -4rem;
+    transition: all 0.8s;
+    -webkit-transition: all 0.8s; }
+    #loading .loadingcar img {
+      width: 100%;
+      height: 100%; }
+  #loading .progress {
+    width: 100%;
+    text-align: center;
+    color: white;
+    border-top: 2px dashed #f9d8a2;
+    padding: .5rem;
+    position: absolute;
+    font-size: .8rem;
+    bottom: 37.5%; }
+
+.home-wrap .inner {
+  background-color: #dc4636;
+  position: relative;
+  overflow: hidden; }
+  .home-wrap .inner img {
+    width: 100%;
+    height: 100%; }
+  .home-wrap .inner .title {
+    width: 13.075rem;
+    height: 3.075rem;
+    position: absolute;
+    bottom: 17.4rem;
+    left: 1.45rem; }
+  .home-wrap .inner .car {
+    width: 7.725rem;
+    height: 8.25rem;
+    position: absolute;
+    bottom: 6.75rem;
+    left: 4.125rem; }
+  .home-wrap .inner .light {
+    width: 16rem;
+    position: absolute;
+    top: 0;
+    left: 0; }
+  .home-wrap .inner .decoration {
+    width: 14.325rem;
+    height: 20.975rem;
+    position: absolute;
+    top: 1.2rem;
+    left: 1.2rem; }
+  .home-wrap .inner .cloud {
+    width: 16rem;
+    height: 9.3rem;
+    position: absolute;
+    bottom: 0;
+    left: 0; }
+  .home-wrap .inner .bottom {
+    width: 13.775rem;
+    height: 2rem;
+    text-align: center;
+    line-height: 2rem;
+    font-size: .7rem;
+    border-radius: .2rem;
+    color: white;
+    background-color: #eb5360;
+    position: absolute;
+    left: 1.1rem;
+    bottom: 1rem; }
+  .home-wrap .inner .rule-btn {
+    width: 5rem;
+    height: 1.25rem;
+    background-color: #e77a6e;
+    color: white;
+    text-indent: .5rem;
+    font-size: .7rem;
+    border-radius: 999px;
+    line-height: 1.2rem;
+    position: absolute;
+    top: 1.65rem;
+    right: -1.2rem; }
+
+#page-game {
+  overflow: hidden; }
+  #page-game .countdown-wrap {
+    width: 3.5rem;
+    height: 1.4rem;
+    text-align: right;
+    padding-right: .9rem;
+    line-height: 1.4rem;
+    border: 1px solid #5d0a1a;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    border-radius: .4rem;
+    position: fixed;
+    top: 1.725rem;
+    left: -.5rem;
+    font-size: .7rem; }
+    #page-game .countdown-wrap span {
+      padding-right: .15rem;
+      font-size: .8rem; }
+
+.layer-rule .inner {
+  width: 100%;
+  min-height: 100%;
+  height: auto;
+  color: white;
+  font-size: .6rem;
+  line-height: 135%;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 1.2rem .5rem .8rem; }
+  .layer-rule .inner h3 {
+    width: 5rem;
+    height: 1.25rem;
+    line-height: 1.25rem;
+    border: 1px solid #dc4735;
+    margin-left: -1.75rem;
+    border-radius: 999px;
+    padding-right: .5rem;
+    text-align: right;
+    font-weight: normal;
+    font-size: .7rem;
+    background-color: #794945; }
+  .layer-rule .inner .time {
+    padding: .55rem 0 .15rem; }
+  .layer-rule .inner h4 {
+    font-weight: normal; }
+  .layer-rule .inner p {
+    padding: .1rem;
+    position: relative;
+    padding-left: 1rem; }
+    .layer-rule .inner p span {
+      position: absolute;
+      left: .1rem; }
+
+#layer-gameover {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  text-align: center;
+  color: white;
+  padding-top: 7rem;
+  font-size: 1rem; }
+  #layer-gameover .score {
+    font-size: 1.5rem; }
+  #layer-gameover .again-btn {
+    background-color: red;
+    border-radius: .3rem;
+    width: 10rem;
+    line-height: 2rem;
+    margin: 1rem auto;
+    color: yellow; }
+
+/*# sourceMappingURL=main.css.map */

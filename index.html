@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>捕油达人</title>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="static/css/reset.css">
+    <link rel="stylesheet" href="static/css/main.css">
+    <script src="static/js/adapt.js" charset="utf-8"></script>
+</head>
+<body>
+    <audio loop="loop" preload="auto" id="bg-music" src = "static/audio/bgmusic.mp3">
+   </audio>
+   <audio preload="auto" id="boom-music">
+       <source src="static/audio/bomb.mp3" type="audio/mpeg">
+   </audio>
+   <audio preload="auto" id="over-music">
+       <source src="static/audio/game_over.mp3" type="audio/mpeg">
+   </audio>
+    <div class="page" id="loading">
+        <div class="loadingcar"><img src="static/img/car.png" alt="" /></div>
+        <div class="progress"></div>
+    </div>
+    <div class="page home-wrap" style="display:none">
+        <div class="inner">
+            <div class="title"><img src="static/img/g_title.png" alt="" /></div>
+            <div class="light"><img src="static/img/g_light.png" alt="" /></div>
+            <div class="cloud"><img src="static/img/g_cloud.png" alt="" /></div>
+            <div class="decoration"><img src="static/img/g_decoration.png" alt="" /></div>
+            <div class="car"><img src="static/img/g_car.png" alt="" /></div>
+            <div class="rule-btn">活动细则</div>
+            <div class="bottom game-btn">开始</div>
+        </div>
+    </div>
+    <div class="page" id="page-game" style="display:none">
+        <canvas id="canvas"></canvas>
+        <div class="countdown-wrap"><span class="countdown"></span>s</div>
+    </div>
+    <div class="page" id="layer-gameover" style="display:none">
+        <div class="inner">
+            <p>你的战绩为<span class="score"></span>分</p>
+            <div class="again-btn">再来一次</div>
+        </div>
+    </div>
+    <div class="layer layer-rule" style="display:none">
+        <div class="inner">
+            <h3>活动细则</h3>
+            <p>活动时间：2016年11月19日-12月8日</p>
+            <h4>活动说明：</h4>
+            <p>1、每人每日有3次捕油游戏机会。</p>
+            <p>2、每人每日有3次捕油游戏机会。每人每日有3次捕油游戏机会。每人每日有3次捕油游戏机会。每人每日有3次捕油游戏机会。每人每日有3次捕油游戏机会。每人每日有3次捕油游戏机会。每人每日有3次捕油游戏机会。每人每日有3次捕油游戏机会。</p>
+            <p>3、每人每日有3次捕油游戏机会。</p>
+            <p>4、每人每日有3次捕油游戏机会每人每日有3次捕油游戏机会。每人每日有3次捕油游戏机会。。</p>
+            <p>5、每人每日有3次捕油游戏机会每人每日有3次捕油游戏机会。每人每日有3次捕油游戏机会。。</p>
+            <p>6、每人每日有3次捕油游戏机会。每人每日有3次捕油游戏机会。每人每日有3次捕油游戏机会。每人每日有3次捕油游戏机会。每人每日有3次捕油游戏机会。每人每日有3次捕油游戏机会。</p>
+            <h3>活动细则</h3>
+            <p>活动时间：2016年11月19日-12月8日</p>
+            <h4>活动说明：</h4>
+            <p>1、每人每日有3次捕油游戏机会。</p>
+            <p>2、每人每日有3次捕油游戏机会。每人每日有3次捕油游戏机会。每人每日有3次捕油游戏机会。每人每日有3次捕油游戏机会。每人每日有3次捕油游戏机会。每人每日有3次捕油游戏机会。每人每日有3次捕油游戏机会。每人每日有3次捕油游戏机会。</p>
+            <p>3、每人每日有3次捕油游戏机会。</p>
+            <p>4、每人每日有3次捕油游戏机会每人每日有3次捕油游戏机会。每人每日有3次捕油游戏机会。。</p>
+            <p>5、每人每日有3次捕油游戏机会每人每日有3次捕油游戏机会。每人每日有3次捕油游戏机会。。</p>
+            <p>6、每人每日有3次捕油游戏机会。每人每日有3次捕油游戏机会。每人每日有3次捕油游戏机会。每人每日有3次捕油游戏机会。每人每日有3次捕油游戏机会。每人每日有3次捕油游戏机会。</p>
+
+            <h3>活动细则</h3>
+            <p>活动时间：2016年11月19日-12月8日</p>
+            <h4>活动说明：</h4>
+            <p>1、每人每日有3次捕油游戏机会。</p>
+            <p>2、每人每日有3次捕油游戏机会。每人每日有3次捕油游戏机会。每人每日有3次捕油游戏机会。每人每日有3次捕油游戏机会。每人每日有3次捕油游戏机会。每人每日有3次捕油游戏机会。每人每日有3次捕油游戏机会。每人每日有3次捕油游戏机会。</p>
+            <p>3、每人每日有3次捕油游戏机会。</p>
+            <p>4、每人每日有3次捕油游戏机会每人每日有3次捕油游戏机会。每人每日有3次捕油游戏机会。。</p>
+            <p>5、每人每日有3次捕油游戏机会每人每日有3次捕油游戏机会。每人每日有3次捕油游戏机会。。</p>
+            <p>6、每人每日有3次捕油游戏机会。每人每日有3次捕油游戏机会。每人每日有3次捕油游戏机会。每人每日有3次捕油游戏机会。每人每日有3次捕油游戏机会。每人每日有3次捕油游戏机会。</p>
+
+        </div>
+    </div>
+</body>
+<script src="static/js/jquery-1.12.1.min.js" charset="utf-8"></script>
+<script src="static/js/index.js" charset="utf-8"></script>
+
+</html>

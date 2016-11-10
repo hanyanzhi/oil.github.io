@@ -1,0 +1,47 @@
+*{
+	box-sizing: border-box;
+	-webkit-tap-highlight-color: transparent;
+	margin: 0;
+	padding: 0;
+}
+div{
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
+  -webkit-user-select: none;
+}
+ul, li, ol {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+img{
+    border: none;
+    outline: none;
+}
+input, select {
+  outline: none;
+  border: none;
+  background: none;
+}
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+  /*min-height: 100%;*/
+  height: 100%;
+  overflow: hidden;
+  background-color: #f6f6f6;
+}
+.fl{float: left;}
+.fr{float: right;}
+.clearfix{
+	zoom:1;
+}
+.clearfix:after{
+	display: block;
+	content: '';
+	clear: both;
+	overflow: hidden;
+	height: 0;
+}
